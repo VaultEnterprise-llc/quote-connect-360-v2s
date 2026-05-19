@@ -1,0 +1,98 @@
+{
+  "name": "ContributionModel",
+  "type": "object",
+  "properties": {
+    "master_general_agent_id": {
+      "type": "string",
+      "description": "MGA scope \u2014 nullable during migration staging; required after Phase 4 validation"
+    },
+    "master_group_id": {
+      "type": "string",
+      "description": "MasterGroup scope \u2014 nullable during migration staging"
+    },
+    "scenario_id": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "strategy": {
+      "type": "string",
+      "enum": [
+        "percentage",
+        "flat_dollar",
+        "defined_contribution",
+        "custom"
+      ],
+      "default": "percentage"
+    },
+    "ee_contribution_pct": {
+      "type": "number"
+    },
+    "dep_contribution_pct": {
+      "type": "number"
+    },
+    "ee_contribution_flat": {
+      "type": "number"
+    },
+    "dep_contribution_flat": {
+      "type": "number"
+    },
+    "class_rules": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "total_ee_count": {
+      "type": "number"
+    },
+    "total_monthly_employer_cost": {
+      "type": "number"
+    },
+    "total_monthly_employee_cost": {
+      "type": "number"
+    },
+    "total_monthly_premium": {
+      "type": "number"
+    },
+    "avg_employee_cost_ee_only": {
+      "type": "number"
+    },
+    "avg_employee_cost_family": {
+      "type": "number"
+    },
+    "aca_affordability_flag": {
+      "type": "boolean",
+      "default": false
+    },
+    "aca_affordability_threshold": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "mga_migration_batch_id": {
+      "type": "string"
+    },
+    "mga_migration_status": {
+      "type": "string",
+      "enum": [
+        "not_migrated",
+        "migrated",
+        "validated",
+        "anomaly",
+        "quarantined"
+      ],
+      "default": "not_migrated"
+    }
+  },
+  "required": [
+    "scenario_id",
+    "case_id",
+    "name"
+  ]
+}

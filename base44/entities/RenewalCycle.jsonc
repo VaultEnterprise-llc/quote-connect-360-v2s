@@ -1,0 +1,93 @@
+{
+  "name": "RenewalCycle",
+  "type": "object",
+  "properties": {
+    "master_general_agent_id": {
+      "type": "string",
+      "description": "MGA scope \u2014 nullable during migration staging; required after Phase 4 validation"
+    },
+    "master_group_id": {
+      "type": "string",
+      "description": "MasterGroup scope \u2014 nullable during migration staging"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "employer_group_id": {
+      "type": "string"
+    },
+    "renewal_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pre_renewal",
+        "marketed",
+        "options_prepared",
+        "employer_review",
+        "decision_made",
+        "install_renewal",
+        "active_renewal",
+        "completed"
+      ],
+      "default": "pre_renewal"
+    },
+    "current_premium": {
+      "type": "number"
+    },
+    "renewal_premium": {
+      "type": "number"
+    },
+    "rate_change_percent": {
+      "type": "number"
+    },
+    "disruption_score": {
+      "type": "number"
+    },
+    "recommendation": {
+      "type": "string",
+      "enum": [
+        "renew_as_is",
+        "renew_with_changes",
+        "market",
+        "terminate"
+      ]
+    },
+    "decision": {
+      "type": "string"
+    },
+    "decision_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "employer_name": {
+      "type": "string"
+    },
+    "assigned_to": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "mga_migration_batch_id": {
+      "type": "string"
+    },
+    "mga_migration_status": {
+      "type": "string",
+      "enum": [
+        "not_migrated",
+        "migrated",
+        "validated",
+        "anomaly",
+        "quarantined"
+      ],
+      "default": "not_migrated"
+    }
+  },
+  "required": [
+    "employer_group_id",
+    "renewal_date"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "name": "ExceptionItem",
+  "type": "object",
+  "properties": {
+    "master_general_agent_id": {
+      "type": "string",
+      "description": "MGA scope \u2014 nullable during migration staging; required after Phase 4 validation"
+    },
+    "master_group_id": {
+      "type": "string",
+      "description": "MasterGroup scope \u2014 nullable during migration staging"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "employer_name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "census",
+        "quote",
+        "enrollment",
+        "carrier",
+        "document",
+        "billing",
+        "system"
+      ],
+      "default": "system"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "default": "medium"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "triaged",
+        "in_progress",
+        "waiting_external",
+        "resolved",
+        "dismissed"
+      ],
+      "default": "new"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "suggested_action": {
+      "type": "string"
+    },
+    "assigned_to": {
+      "type": "string"
+    },
+    "due_by": {
+      "type": "string",
+      "format": "date"
+    },
+    "resolved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "resolution_notes": {
+      "type": "string"
+    },
+    "entity_type": {
+      "type": "string"
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "mga_migration_batch_id": {
+      "type": "string"
+    },
+    "mga_migration_status": {
+      "type": "string",
+      "enum": [
+        "not_migrated",
+        "migrated",
+        "validated",
+        "anomaly",
+        "quarantined"
+      ],
+      "default": "not_migrated"
+    }
+  },
+  "required": [
+    "title",
+    "category",
+    "severity"
+  ]
+}

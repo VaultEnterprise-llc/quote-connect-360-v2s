@@ -1,0 +1,100 @@
+{
+  "name": "BrokerMGARelationship",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "UUID primary key"
+    },
+    "tenant_id": {
+      "type": "string"
+    },
+    "broker_agency_id": {
+      "type": "string",
+      "description": "FK to BrokerAgencyProfile"
+    },
+    "master_general_agent_id": {
+      "type": "string",
+      "description": "FK to MasterGeneralAgent"
+    },
+    "relationship_type": {
+      "type": "string",
+      "enum": ["affiliated", "delegated", "hybrid"],
+      "default": "affiliated"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "active", "suspended", "terminated"],
+      "default": "draft"
+    },
+    "established_at": {
+      "type": "string",
+      "format": "date-time",
+      "nullable": true
+    },
+    "established_by_user_email": {
+      "type": "string",
+      "nullable": true
+    },
+    "distribution_channel_context_id": {
+      "type": "string",
+      "nullable": true,
+      "description": "FK to DistributionChannelContext (added)"
+    },
+    "owner_org_type": {
+      "type": "string",
+      "enum": ["platform", "broker_agency", "mga", "employer"],
+      "nullable": true,
+      "description": "Owner org type (added)"
+    },
+    "owner_org_id": {
+      "type": "string",
+      "nullable": true
+    },
+    "servicing_org_type": {
+      "type": "string",
+      "enum": ["broker_agency", "mga", "employer", "benefits_admin"],
+      "nullable": true
+    },
+    "servicing_org_id": {
+      "type": "string",
+      "nullable": true
+    },
+    "supervising_org_type": {
+      "type": "string",
+      "enum": ["mga", "platform"],
+      "nullable": true
+    },
+    "supervising_org_id": {
+      "type": "string",
+      "nullable": true
+    },
+    "created_by_user_id": {
+      "type": "string",
+      "nullable": true,
+      "description": "Added for consistency"
+    },
+    "created_by_role": {
+      "type": "string",
+      "nullable": true
+    },
+    "visibility_scope": {
+      "type": "string",
+      "enum": ["owner_only", "owner_and_servicing", "owner_and_supervising", "owner_and_all_affiliates", "platform_wide"],
+      "nullable": true
+    },
+    "audit_trace_id": {
+      "type": "string",
+      "nullable": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": ["tenant_id", "broker_agency_id", "master_general_agent_id"]
+}

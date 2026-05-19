@@ -1,0 +1,119 @@
+{
+  "name": "BrokerPlatformRelationship",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "UUID primary key"
+    },
+    "tenant_id": {
+      "type": "string",
+      "description": "Tenant scope"
+    },
+    "broker_agency_id": {
+      "type": "string",
+      "description": "FK to BrokerAgencyProfile (unique per broker)"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending_approval", "approved", "suspended", "inactive"],
+      "default": "pending_approval"
+    },
+    "approval_status": {
+      "type": "string",
+      "enum": ["none", "pending", "approved", "rejected"],
+      "default": "none"
+    },
+    "approval_requested_by_user_email": {
+      "type": "string",
+      "nullable": true
+    },
+    "approval_requested_at": {
+      "type": "string",
+      "format": "date-time",
+      "nullable": true
+    },
+    "approved_by_user_email": {
+      "type": "string",
+      "nullable": true
+    },
+    "approved_at": {
+      "type": "string",
+      "format": "date-time",
+      "nullable": true
+    },
+    "compliance_status": {
+      "type": "string",
+      "enum": ["pending_review", "compliant", "issues_found", "suspended"],
+      "default": "pending_review"
+    },
+    "distribution_channel_context_id": {
+      "type": "string",
+      "nullable": true,
+      "description": "FK to DistributionChannelContext (added)"
+    },
+    "master_general_agent_id": {
+      "type": "string",
+      "nullable": true,
+      "description": "MGA scope if applicable (added, non-identifying)"
+    },
+    "owner_org_type": {
+      "type": "string",
+      "enum": ["platform", "broker_agency", "mga", "employer"],
+      "nullable": true,
+      "description": "Owner org type (added)"
+    },
+    "owner_org_id": {
+      "type": "string",
+      "nullable": true,
+      "description": "Owner org ID (added)"
+    },
+    "servicing_org_type": {
+      "type": "string",
+      "enum": ["broker_agency", "mga", "employer", "benefits_admin"],
+      "nullable": true,
+      "description": "Servicing org type (added)"
+    },
+    "servicing_org_id": {
+      "type": "string",
+      "nullable": true
+    },
+    "supervising_org_type": {
+      "type": "string",
+      "enum": ["mga", "platform"],
+      "nullable": true
+    },
+    "supervising_org_id": {
+      "type": "string",
+      "nullable": true
+    },
+    "created_by_user_id": {
+      "type": "string",
+      "nullable": true,
+      "description": "User who created this relationship (added)"
+    },
+    "created_by_role": {
+      "type": "string",
+      "nullable": true
+    },
+    "visibility_scope": {
+      "type": "string",
+      "enum": ["owner_only", "owner_and_servicing", "owner_and_supervising", "owner_and_all_affiliates", "platform_wide"],
+      "nullable": true,
+      "description": "Visibility scope (added)"
+    },
+    "audit_trace_id": {
+      "type": "string",
+      "nullable": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": ["tenant_id", "broker_agency_id"]
+}

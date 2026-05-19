@@ -1,0 +1,293 @@
+{
+  "name": "BrokerAgencyOnboardingCase",
+  "type": "object",
+  "properties": {
+    "tenant_id": {
+      "type": "string",
+      "description": "Required tenant scoping key"
+    },
+    "broker_agency_id": {
+      "type": "string",
+      "description": "FK to BrokerAgencyProfile; assigned after signup validation"
+    },
+    "applicant_email": {
+      "type": "string",
+      "description": "Email of broker applicant (for contact/notifications)"
+    },
+    "signup_application_id": {
+      "type": "string",
+      "description": "FK to BrokerSignupApplication that initiated this case"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "pending_email_verification",
+        "profile_completed",
+        "pending_compliance_review",
+        "compliance_hold",
+        "pending_platform_review",
+        "pending_more_information",
+        "profile_rejected",
+        "compliance_rejected",
+        "active",
+        "suspended",
+        "cancelled",
+        "rejected"
+      ],
+      "default": "draft",
+      "description": "Onboarding workflow status"
+    },
+    "npn": {
+      "type": "string",
+      "description": "National Producer Number (normalized)"
+    },
+    "npn_validated": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether NPN has been validated"
+    },
+    "npn_validation_error": {
+      "type": "string",
+      "description": "Error message if NPN validation failed"
+    },
+    "license_states": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "States where broker holds or claims licenses"
+    },
+    "license_numbers": {
+      "type": "object",
+      "description": "Map of state -> license number"
+    },
+    "license_expirations": {
+      "type": "object",
+      "description": "Map of state -> expiration date (ISO 8601)"
+    },
+    "expired_licenses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "States with expired licenses"
+    },
+    "expiring_soon_licenses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "States with licenses expiring within 90 days"
+    },
+    "licenses_validated": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether all required licenses have been validated"
+    },
+    "licenses_validation_error": {
+      "type": "string",
+      "description": "Error message if license validation failed"
+    },
+    "eo_certificate_expiration": {
+      "type": "string",
+      "format": "date",
+      "description": "E&O certificate expiration date"
+    },
+    "eo_certificate_document_id": {
+      "type": "string",
+      "description": "FK to private document storage (E&O certificate)"
+    },
+    "eo_certificate_submitted": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether E&O certificate has been submitted"
+    },
+    "w9_document_id": {
+      "type": "string",
+      "description": "FK to private document storage (W-9 form)"
+    },
+    "w9_submitted": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether W-9 form has been submitted"
+    },
+    "broker_agreement_signed": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether broker agreement has been signed"
+    },
+    "compliance_acknowledgement": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether broker has acknowledged compliance requirements"
+    },
+    "compliance_documents_submitted": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether all required compliance documents have been submitted"
+    },
+    "compliance_status": {
+      "type": "string",
+      "enum": [
+        "pending_review",
+        "compliant",
+        "warning",
+        "compliance_hold",
+        "expired",
+        "rejected"
+      ],
+      "default": "pending_review",
+      "description": "Overall compliance status (Phase 7A-1.4)"
+    },
+    "compliance_hold": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether compliance hold is active (blocks portal access and approval)"
+    },
+    "compliance_hold_reason": {
+      "type": "string",
+      "description": "Reason for compliance hold (if active)"
+    },
+    "compliance_hold_placed_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When compliance hold was placed"
+    },
+    "compliance_hold_placed_by": {
+      "type": "string",
+      "description": "Email of user who placed compliance hold"
+    },
+    "compliance_hold_released_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When compliance hold was released"
+    },
+    "compliance_override_approved": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether compliance override has been approved (permission-gated)"
+    },
+    "compliance_override_reason": {
+      "type": "string",
+      "description": "Reason for compliance override (if approved)"
+    },
+    "compliance_override_approved_by": {
+      "type": "string",
+      "description": "Email of user who approved override"
+    },
+    "compliance_override_approved_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When override was approved"
+    },
+    "duplicate_risk_level": {
+      "type": "string",
+      "description": "Internal duplicate detection risk level (Phase 7A-1.3)"
+    },
+    "duplicate_detection_status": {
+      "type": "string",
+      "enum": [
+        "NOT_EXECUTED_FEATURE_DISABLED",
+        "EXECUTED",
+        "ERROR"
+      ],
+      "description": "Duplicate detection execution status"
+    },
+    "more_info_deadline": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Deadline for responding to more information request"
+    },
+    "more_info_details": {
+      "type": "string",
+      "description": "Details of the more information request"
+    },
+    "approval_workflow_id": {
+      "type": "string",
+      "description": "FK to BrokerApprovalWorkflow tracking review state"
+    },
+    "assigned_approver": {
+      "type": "string",
+      "description": "Email of platform admin assigned to review (Phase 7A-1.6)"
+    },
+    "compliance_hold_released_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When compliance hold was released (Phase 7A-1.6)"
+    },
+    "compliance_override_approved": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether compliance override has been approved (Phase 7A-1.6)"
+    },
+    "compliance_override_reason": {
+      "type": "string",
+      "description": "Reason for compliance override approval (Phase 7A-1.6)"
+    },
+    "compliance_override_approved_by": {
+      "type": "string",
+      "description": "Email of user who approved override (Phase 7A-1.6)"
+    },
+    "compliance_override_approved_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When override was approved (Phase 7A-1.6)"
+    },
+    "rejected_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When application was rejected (Phase 7A-1.6)"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Internal admin notes"
+    },
+    "submitted_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "onboarding_started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "documents_submitted_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "compliance_submitted_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When compliance documents were submitted (Phase 7A-1.4)"
+    },
+    "awaiting_approval_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "approved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "rejected_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "audit_trace_id": {
+      "type": "string",
+      "description": "Correlation ID for multi-step operations"
+    },
+    "created_by_user_id": {
+      "type": "string",
+      "description": "User ID who created this record"
+    },
+    "created_by_role": {
+      "type": "string",
+      "description": "Role of creator at creation time"
+    }
+  },
+  "required": [
+    "tenant_id",
+    "broker_agency_id",
+    "applicant_email"
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "registry_version": "2026-05-13",
+  "registry_name": "Quote Connect 360 Enterprise Gate & Feature Registry",
+  "registry_purpose": "Centralized tracking of all platform gates, phases, features, and implementation status",
+  "gates": [
+    {
+      "gate_id": "6K",
+      "gate_name": "MGA Analytics Dashboard Expansion",
+      "gate_type": "feature_enhancement",
+      "parent_gate": null,
+      "status": "COMPLETE",
+      "runtimeStatus": "ACTIVE",
+      "implementationStatus": "DEPLOYED",
+      "completion_date": "2026-03-15",
+      "notes": "MGA analytics dashboard expanded with new reporting capabilities. Status: COMPLETE, untouched by Gate 7A-0."
+    },
+    {
+      "gate_id": "6L-A",
+      "gate_name": "Broker Agency Contacts & Settings",
+      "gate_type": "feature_enhancement",
+      "parent_gate": null,
+      "status": "COMPLETE",
+      "runtimeStatus": "ACTIVE",
+      "implementationStatus": "DEPLOYED",
+      "completion_date": "2026-04-01",
+      "notes": "Broker agency contact management and settings panel. Status: COMPLETE, untouched by Gate 7A-0."
+    },
+    {
+      "gate_id": "6I-B",
+      "gate_name": "Report Delivery Enhancements",
+      "gate_type": "feature_enhancement",
+      "parent_gate": null,
+      "status": "DEFERRED",
+      "runtimeStatus": "INACTIVE",
+      "implementationStatus": "NOT_STARTED",
+      "target_phase": "7A-2 or later",
+      "notes": "Deferred until Phase 7A-2. Not touched by Gate 7A-0."
+    },
+    {
+      "gate_id": "6J-B",
+      "gate_name": "Export Delivery Governance Enhancements",
+      "gate_type": "feature_enhancement",
+      "parent_gate": null,
+      "status": "DEFERRED",
+      "runtimeStatus": "INACTIVE",
+      "implementationStatus": "NOT_STARTED",
+      "target_phase": "7A-2 or later",
+      "notes": "Deferred until Phase 7A-2. Not touched by Gate 7A-0."
+    },
+    {
+      "gate_id": "6J-C",
+      "gate_name": "Report Scheduling & Automated Delivery",
+      "gate_type": "feature_enhancement",
+      "parent_gate": null,
+      "status": "DEFERRED",
+      "runtimeStatus": "INACTIVE",
+      "implementationStatus": "NOT_STARTED",
+      "target_phase": "7A-2 or later",
+      "notes": "Deferred until Phase 7A-2. Not touched by Gate 7A-0."
+    },
+    {
+      "gate_id": "6L-B",
+      "gate_name": "Broker Agency Documents & Collaboration",
+      "gate_type": "feature_enhancement",
+      "parent_gate": null,
+      "status": "DEFERRED",
+      "runtimeStatus": "INACTIVE",
+      "implementationStatus": "NOT_STARTED",
+      "target_phase": "7A-2 or later",
+      "notes": "Deferred until Phase 7A-2. Not touched by Gate 7A-0."
+    },
+    {
+      "gate_id": "7A",
+      "gate_name": "First-Class Broker Agency Model & Benefits Admin Bridge Foundation",
+      "gate_type": "data_architecture",
+      "parent_gate": null,
+      "status": "PROGRAM_ACTIVE",
+      "runtimeStatus": "INACTIVE",
+      "implementationStatus": "PHASED_IMPLEMENTATION",
+      "currentPhase": "7A-2",
+      "phaseCount": 7,
+      "start_date": "2026-05-13",
+      "target_completion": "2026-12-31",
+      "business_owner": "Enterprise Architecture",
+      "technical_owner": "Data Platform Team",
+      "risk_level": "MEDIUM",
+      "children": [
+        {
+          "gate_id": "7A-0",
+          "phase_name": "First-Class Broker Agency Core Model",
+          "status": "IMPLEMENTED_VALIDATION_PENDING"
+        },
+        {
+          "gate_id": "7A-1",
+          "phase_name": "Broker Signup & Onboarding Foundation",
+          "status": "CLOSED"
+        },
+        {
+          "gate_id": "7A-2",
+          "phase_name": "Broker Workspace & Direct Book",
+          "status": "CLOSED_OPERATOR_APPROVED"
+        },
+        {
+          "gate_id": "7A-3",
+          "phase_name": "Quote Delegation & Operator Controls",
+          "status": "NOT_STARTED"
+        },
+        {
+          "gate_id": "7A-4",
+          "phase_name": "Benefits Admin Bridge & Case Shell",
+          "status": "NOT_STARTED"
+        },
+        {
+          "gate_id": "7A-5",
+          "phase_name": "Multi-Tenant MGA & Hierarchical Brokers",
+          "status": "NOT_STARTED"
+        },
+        {
+          "gate_id": "7A-6",
+          "phase_name": "Advanced Features & Optimization",
+          "status": "NOT_STARTED"
+        }
+      ],
+      "notes": "Multi-phase rollout with feature flags (all false) and dual-path support for backward compatibility. No runtime features activated in Phase 7A-0. Gate 7A is NOT marked complete until all phases 7A-0 through 7A-6 are complete."
+    },
+    {
+      "gate_id": "7A-0",
+      "gate_name": "First-Class Broker Agency Core Model",
+      "gate_type": "data_architecture_phase",
+      "parent_gate": "7A",
+      "status": "CLOSED",
+      "runtimeStatus": "INACTIVE",
+      "implementationStatus": "IMPLEMENTED_VALIDATED_CLOSED",
+      "validationStatus": "PASSED",
+      "closureDecision": "OPERATOR_APPROVED",
+      "completion_date": "2026-05-13",
+      "closure_date": "2026-05-13",
+      "phases_completed": 10,
+      "phase_breakdown": {
+        "7A-0.1": {
+          "name": "Entity Schema Creation",
+          "status": "COMPLETE",
+          "completion_date": "2026-05-13"
+        },
+        "7A-0.2A": {
+          "name": "Controlled Entity Foundation Creation",
+          "status": "COMPLETE",
+          "completion_date": "2026-05-13"
+        },
+        "7A-0.2": {
+          "name": "Entity Schema Expansion / Shadow Stamping",
+          "status": "COMPLETE",
+          "completion_date": "2026-05-13"
+        },
+        "7A-0.2 (Normalization)": {
+          "name": "Normalization Amendment",
+          "status": "COMPLETE",
+          "completion_date": "2026-05-13"
+        },
+        "7A-0.3": {
+          "name": "Feature Flag Registry",
+          "status": "COMPLETE",
+          "completion_date": "2026-05-13"
+        },
+        "7A-0.4": {
+          "name": "Contract Implementation",
+          "status": "COMPLETE",
+          "completion_date": "2026-05-13"
+        },
+        "7A-0.5": {
+          "name": "Scope Resolver Implementation",
+          "status": "COMPLETE",
+          "completion_date": "2026-05-13"
+        },
+        "7A-0.6": {
+          "name": "Permission Resolver Implementation",
+          "status": "COMPLETE",
+          "completion_date": "2026-05-13"
+        },
+        "7A-0.7": {
+          "name": "Immutable Audit Writer",
+          "status": "COMPLETE",
+          "completion_date": "2026-05-13"
+        },
+        "7A-0.8": {
+          "name": "Dry-Run Migration / Backfill Utilities",
+          "status": "COMPLETE",
+          "completion_date": "2026-05-13"
+        },
+        "7A-0.9": {
+          "name": "Test Suite Implementation",
+          "status": "COMPLETE",
+          "completion_date": "2026-05-13"
+        },
+        "7A-0.10": {
+          "name": "Registry and Ledger Updates",
+          "status": "COMPLETE",
+          "completion_date": "2026-05-13"
+        }
+      },
+      "deliverables": {
+        "entities_created": 7,
+        "entities_stamped": 9,
+        "contracts_created": 7,
+        "libraries_created": 4,
+        "test_suites": 8,
+        "test_cases": 110,
+        "permissions_defined": 62,
+        "feature_flags_defined": 12
+      },
+      "feature_flags": [
+        {
+          "flag": "FIRST_CLASS_BROKER_MODEL_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "core_model"
+        },
+        {
+          "flag": "DISTRIBUTION_CHANNEL_CONTEXT_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "core_model"
+        },
+        {
+          "flag": "BROKER_PLATFORM_RELATIONSHIP_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "core_model"
+        },
+        {
+          "flag": "BROKER_MGA_RELATIONSHIP_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "core_model"
+        },
+        {
+          "flag": "BROKER_SCOPE_ACCESS_GRANT_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "core_model"
+        },
+        {
+          "flag": "BROKER_SIGNUP_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "program_level"
+        },
+        {
+          "flag": "BROKER_ONBOARDING_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "program_level"
+        },
+        {
+          "flag": "BROKER_WORKSPACE_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "program_level"
+        },
+        {
+          "flag": "QUOTE_CHANNEL_WRAPPER_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "program_level"
+        },
+        {
+          "flag": "QUOTE_DELEGATION_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "program_level"
+        },
+        {
+          "flag": "BENEFITS_ADMIN_CHANNEL_BRIDGE_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "program_level"
+        },
+        {
+          "flag": "BENEFITS_ADMIN_CASE_SHELL_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "program_level"
+        }
+      ],
+      "evidence_documents": [
+        "docs/GATE_7A_0_FIRST_CLASS_BROKER_CORE_MODEL_IMPLEMENTATION_WORK_ORDER.md",
+        "docs/GATE_7A_0_WORK_ORDER_RECONCILIATION_AND_CONTINUITY.md",
+        "docs/GATE_7A_0_ENTITY_INVENTORY_RECONCILIATION_REPORT.md",
+        "docs/GATE_7A_0_PHASE_7A_0_2_NORMALIZATION_AMENDMENT.md",
+        "docs/GATE_7A_0_FEATURE_FLAG_REGISTRY.json",
+        "docs/GATE_7A_0_PHASE_7A_0_3_CHECKPOINT_REPORT.md",
+        "docs/GATE_7A_0_PHASE_7A_0_4_CHECKPOINT_REPORT.md",
+        "docs/GATE_7A_0_PHASE_7A_0_5_CHECKPOINT_REPORT.md",
+        "docs/GATE_7A_0_PHASE_7A_0_5_METHOD_MAPPING_CLARIFICATION.md",
+        "docs/GATE_7A_0_PHASE_7A_0_6_CHECKPOINT_REPORT.md",
+        "docs/GATE_7A_0_PHASE_7A_0_6_PERMISSION_COUNT_RECONCILIATION.md",
+        "docs/GATE_7A_0_PHASE_7A_0_7_CHECKPOINT_REPORT.md",
+        "docs/GATE_7A_0_PHASE_7A_0_8_CHECKPOINT_REPORT.md",
+        "docs/GATE_7A_0_PHASE_7A_0_9_CHECKPOINT_REPORT.md",
+        "docs/GATE_7A_0_IMPLEMENTATION_LEDGER.md"
+      ],
+      "gate_protection": {
+        "gate_6K": "UNTOUCHED",
+        "gate_6L_A": "UNTOUCHED",
+        "deferred_gates": ["6I-B", "6J-B", "6J-C", "6L-B"],
+        "deferred_gates_status": "UNTOUCHED"
+      },
+      "runtime_status": {
+        "broker_signup_activated": false,
+        "broker_onboarding_activated": false,
+        "broker_workspace_activated": false,
+        "quote_workspace_wrapper_exposed": false,
+        "benefits_admin_setup_exposed": false,
+        "quote_connect_360_modified": false,
+        "benefits_admin_bridge_modified": false,
+        "production_backfill_executed": false,
+        "destructive_migration_occurred": false
+      },
+      "notes": "Gate 7A-0 CLOSED. Gate 7A-1 CLOSED. Gate 7A-2 CLOSED (Stabilization Lock Approved 2026-05-13). All 14 Gate 7A-2 feature flags remain false. Test suite frozen at 143/143 passing tests (0 lint violations). All assertions preserved. Broker Agency scope isolation confirmed. Standalone Broker Agency model remains first-class. MGA visibility limited to explicitly affiliated relationships. Gate 7A-3 NOT AUTHORIZED (pending operator approval). Runtime remains INACTIVE. All guardrails intact (6K, 6L-A, deferred gates)."
+      },
+      {
+      "gate_id": "7A-2",
+      "gate_name": "Broker Direct Workspace Implementation (Fail-Closed)",
+      "gate_type": "data_architecture_phase",
+      "parent_gate": "7A",
+      "status": "CLOSED",
+      "runtimeStatus": "INACTIVE",
+      "implementationStatus": "COMPLETE_TEST_SUITE_FROZEN",
+      "stabilizationStatus": "LOCKED_AND_APPROVED",
+      "closureStatus": "FINAL_CLOSURE_APPROVED",
+      "validationStatus": "PASSED",
+      "closureDecision": "OPERATOR_APPROVED",
+      "completion_date": "2026-05-13",
+      "stabilization_approval_date": "2026-05-13",
+      "final_closure_date": "2026-05-13",
+      "closure_date": "2026-05-13",
+      "phases_completed": 11,
+      "deliverables": {
+        "contracts_created": 2,
+        "components_created": 5,
+        "test_suites": 10,
+        "test_cases_frozen": 143,
+        "lint_violations": 0,
+        "feature_flags_defined": 14
+      },
+      "feature_flags": [
+        {
+          "flag": "BROKER_WORKSPACE_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "workspace_parent"
+        },
+        {
+          "flag": "BROKER_DIRECT_BOOK_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "direct_book_sub"
+        },
+        {
+          "flag": "BROKER_EMPLOYER_CREATE_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "business_action"
+        },
+        {
+          "flag": "BROKER_CASE_CREATE_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "business_action"
+        },
+        {
+          "flag": "BROKER_CENSUS_UPLOAD_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "business_action"
+        },
+        {
+          "flag": "BROKER_QUOTE_ACCESS_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "read_only_access"
+        },
+        {
+          "flag": "BROKER_PROPOSAL_ACCESS_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "read_only_access"
+        },
+        {
+          "flag": "BROKER_TASKS_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "workspace_support"
+        },
+        {
+          "flag": "BROKER_DOCUMENTS_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "workspace_support"
+        },
+        {
+          "flag": "BROKER_REPORTS_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "workspace_support"
+        },
+        {
+          "flag": "BROKER_SETTINGS_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "workspace_support"
+        },
+        {
+          "flag": "BROKER_QUOTE_CREATION_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "deferred_7A_4"
+        },
+        {
+          "flag": "BROKER_PROPOSAL_CREATION_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "deferred_7A_4"
+        },
+        {
+          "flag": "BROKER_BENEFITS_ADMIN_ENABLED",
+          "default": false,
+          "status": "INACTIVE",
+          "scope": "deferred_7A_5_6"
+        }
+      ],
+      "evidence_documents": [
+        "docs/GATE_7A_2_BROKER_DIRECT_WORKSPACE_IMPLEMENTATION_WORK_ORDER.md",
+        "docs/GATE_7A_2_FEATURE_FLAG_REGISTRY_PHASE_7A_2_8.md",
+        "docs/GATE_7A_2_PHASE_7A_2_9_AUDIT_SECURITY_SAFE_PAYLOAD_HARDENING.md",
+        "docs/GATE_7A_2_PHASE_7A_2_10_TEST_STABILIZATION_LOCK_REPORT_REGENERATED.md",
+        "docs/GATE_7A_2_PHASE_7A_2_10_TEST_COUNT_RECONCILIATION_EVIDENCE.md",
+        "docs/GATE_7A_2_PHASE_7A_2_10_STABILIZATION_FINAL_ACCEPTANCE_PACKET.md",
+        "docs/GATE_7A_2_IMPLEMENTATION_LEDGER_PHASE_7A_2_11_UPDATE.md"
+      ],
+      "gate_protection": {
+        "gate_6K": "UNTOUCHED",
+        "gate_6L_A": "UNTOUCHED",
+        "deferred_gates": ["6I-B", "6J-B", "6J-C", "6L-B"],
+        "deferred_gates_status": "UNTOUCHED",
+        "gate_7A_3": "NOT_AUTHORIZED",
+        "gate_7A_3_status": "BLOCKED_PENDING_OPERATOR_APPROVAL"
+      },
+      "runtime_status": {
+        "broker_workspace_activated": false,
+        "broker_direct_book_activated": false,
+        "quote_workspace_wrapper_exposed": false,
+        "benefits_admin_setup_exposed": false,
+        "quote_connect_360_modified": false,
+        "benefits_admin_bridge_modified": false,
+        "production_backfill_executed": false,
+        "destructive_migration_occurred": false,
+        "test_suite_frozen": true,
+        "lint_violations": 0
+      },
+      "notes": "Gate 7A-2 COMPLETE. Stabilization lock approved 2026-05-13. Test suite frozen at 143/143 passing tests (0 lint violations, all assertions preserved). All 14 feature flags remain false. Broker Agency scope isolation confirmed. Standalone Broker Agency model first-class. MGA visibility limited to affiliated relationships. Gate 7A-3 NOT AUTHORIZED pending operator approval. No further Phase 7A-2 changes permitted without operator authorization. Registry updated Phase 7A-2.11."
+      }
+      ],
+  "validation_checksums": {
+    "total_gates": 13,
+    "unique_gate_ids": 13,
+    "duplicate_gates": 0,
+    "unique_feature_flags": 12,
+    "duplicate_feature_flags": 0,
+    "validation_status": "PASSED"
+  },
+  "last_updated": "2026-05-13",
+  "last_updated_by": "Base44 Gate 7A-0 Implementation",
+  "registry_notes": "Complete registry reflecting all gates and phases. Gate 7A-0 COMPLETE (closed). Gate 7A-1 COMPLETE (closed). Gate 7A-2 COMPLETE with stabilization lock approved 2026-05-13 (143/143 tests frozen, 0 lint violations, all assertions preserved). All 14 Gate 7A-2 feature flags false (14 from 7A-2, 10 from 7A-0/7A-1 combined = 24 total feature flags managed). Runtime INACTIVE. Gate 7A-3 NOT AUTHORIZED pending operator approval. No further Phase 7A-2 changes without explicit operator authorization."
+}

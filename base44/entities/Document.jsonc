@@ -1,0 +1,73 @@
+{
+  "name": "Document",
+  "type": "object",
+  "properties": {
+    "master_general_agent_id": {
+      "type": "string",
+      "description": "MGA scope \u2014 nullable during migration staging; required after Phase 4 validation"
+    },
+    "master_group_id": {
+      "type": "string",
+      "description": "MasterGroup scope \u2014 nullable during migration staging"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "employer_group_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "document_type": {
+      "type": "string",
+      "enum": [
+        "census",
+        "proposal",
+        "sbc",
+        "application",
+        "contract",
+        "correspondence",
+        "enrollment_form",
+        "other"
+      ],
+      "default": "other"
+    },
+    "file_url": {
+      "type": "string"
+    },
+    "file_name": {
+      "type": "string"
+    },
+    "file_size": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "uploaded_by": {
+      "type": "string"
+    },
+    "employer_name": {
+      "type": "string"
+    },
+    "mga_migration_batch_id": {
+      "type": "string"
+    },
+    "mga_migration_status": {
+      "type": "string",
+      "enum": [
+        "not_migrated",
+        "migrated",
+        "validated",
+        "anomaly",
+        "quarantined"
+      ],
+      "default": "not_migrated"
+    }
+  },
+  "required": [
+    "case_id",
+    "name"
+  ]
+}

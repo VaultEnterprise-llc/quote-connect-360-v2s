@@ -1,0 +1,50 @@
+{
+  "name": "TxQuoteDestinationContact",
+  "type": "object",
+  "properties": {
+    "master_general_agent_id": {
+      "type": "string",
+      "description": "MGA scope \u2014 nullable for global platform-default contacts; required for MGA-specific contacts"
+    },
+    "destination_code": {
+      "type": "string",
+      "enum": [
+        "TRIAD",
+        "SUS",
+        "AST"
+      ]
+    },
+    "contact_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "contact_type": {
+      "type": "string",
+      "enum": [
+        "to",
+        "cc",
+        "bcc"
+      ]
+    },
+    "is_default": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "is_platform_global": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this is a platform-default contact not owned by any specific MGA. MGA-specific contacts should have is_platform_global = false and master_general_agent_id set."
+    }
+  },
+  "required": [
+    "destination_code",
+    "email",
+    "contact_type"
+  ]
+}

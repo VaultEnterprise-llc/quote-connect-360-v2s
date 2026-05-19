@@ -1,0 +1,113 @@
+{
+  "name": "Proposal",
+  "type": "object",
+  "properties": {
+    "master_general_agent_id": {
+      "type": "string",
+      "description": "MGA scope \u2014 nullable during migration staging; required after Phase 4 validation"
+    },
+    "master_group_id": {
+      "type": "string",
+      "description": "MasterGroup scope \u2014 nullable during migration staging"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "scenario_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "number",
+      "default": 1
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "sent",
+        "viewed",
+        "approved",
+        "rejected",
+        "expired"
+      ],
+      "default": "draft"
+    },
+    "employer_name": {
+      "type": "string"
+    },
+    "effective_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "broker_name": {
+      "type": "string"
+    },
+    "broker_email": {
+      "type": "string"
+    },
+    "agency_name": {
+      "type": "string"
+    },
+    "cover_message": {
+      "type": "string"
+    },
+    "plan_summary": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "contribution_summary": {
+      "type": "object"
+    },
+    "total_monthly_premium": {
+      "type": "number"
+    },
+    "employer_monthly_cost": {
+      "type": "number"
+    },
+    "employee_avg_cost": {
+      "type": "number"
+    },
+    "sent_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "viewed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "approved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "mga_migration_batch_id": {
+      "type": "string"
+    },
+    "mga_migration_status": {
+      "type": "string",
+      "enum": [
+        "not_migrated",
+        "migrated",
+        "validated",
+        "anomaly",
+        "quarantined"
+      ],
+      "default": "not_migrated"
+    }
+  },
+  "required": [
+    "case_id",
+    "title"
+  ]
+}

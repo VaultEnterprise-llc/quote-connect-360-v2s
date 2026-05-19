@@ -1,0 +1,84 @@
+{
+  "name": "CensusVersion",
+  "type": "object",
+  "properties": {
+    "master_general_agent_id": {
+      "type": "string",
+      "description": "MGA scope \u2014 nullable during migration staging; required after Phase 4 validation"
+    },
+    "master_group_id": {
+      "type": "string",
+      "description": "MasterGroup scope \u2014 nullable during migration staging"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "version_number": {
+      "type": "number",
+      "default": 1
+    },
+    "file_url": {
+      "type": "string",
+      "description": "URL to uploaded census file"
+    },
+    "file_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "uploaded",
+        "mapping",
+        "validating",
+        "validated",
+        "has_issues",
+        "archived"
+      ],
+      "default": "uploaded"
+    },
+    "total_employees": {
+      "type": "number"
+    },
+    "total_dependents": {
+      "type": "number"
+    },
+    "eligible_employees": {
+      "type": "number"
+    },
+    "validation_errors": {
+      "type": "number",
+      "default": 0
+    },
+    "validation_warnings": {
+      "type": "number",
+      "default": 0
+    },
+    "uploaded_by": {
+      "type": "string"
+    },
+    "validated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "mga_migration_batch_id": {
+      "type": "string"
+    },
+    "mga_migration_status": {
+      "type": "string",
+      "enum": [
+        "not_migrated",
+        "migrated",
+        "validated",
+        "anomaly",
+        "quarantined"
+      ],
+      "default": "not_migrated"
+    }
+  },
+  "required": [
+    "case_id"
+  ]
+}

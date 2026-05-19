@@ -1,0 +1,112 @@
+{
+  "name": "BrokerAgencyInvitation",
+  "type": "object",
+  "properties": {
+    "tenant_id": {
+      "type": "string",
+      "description": "Required tenant scoping key"
+    },
+    "broker_agency_id": {
+      "type": "string",
+      "description": "FK to BrokerAgencyProfile"
+    },
+    "onboarding_case_id": {
+      "type": "string",
+      "description": "FK to BrokerAgencyOnboardingCase"
+    },
+    "applicant_email": {
+      "type": "string",
+      "description": "Email address of broker applicant"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "invited",
+        "email_verified",
+        "profile_incomplete",
+        "profile_completed",
+        "pending_compliance_documents",
+        "pending_platform_review",
+        "pending_more_information",
+        "active",
+        "rejected",
+        "cancelled",
+        "expired",
+        "suspended",
+        "superseded"
+      ],
+      "default": "invited",
+      "description": "Invitation lifecycle status (Phase 7A-1.5)"
+    },
+    "token_hash": {
+      "type": "string",
+      "description": "SHA256 hash only — HMAC-SHA256 or approved equivalent; never plaintext token"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Token expiration (7 days from creation by default)"
+    },
+    "single_use_consumed_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When token was consumed (single-use enforcement, Phase 7A-1.5)"
+    },
+    "superseded_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When invitation was superseded by a newer invitation (Phase 7A-1.5)"
+    },
+    "superseded_by_invitation_id": {
+      "type": "string",
+      "description": "FK to newer invitation that superseded this one (Phase 7A-1.5)"
+    },
+    "cancelled_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When invitation was cancelled by applicant or operator (Phase 7A-1.5)"
+    },
+    "cancelled_by": {
+      "type": "string",
+      "description": "Email of user who cancelled (applicant email or platform user, Phase 7A-1.5)"
+    },
+    "cancellation_reason": {
+      "type": "string",
+      "description": "Reason for cancellation (Phase 7A-1.5)"
+    },
+    "invited_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When initial invitation was created (Phase 7A-1.5)"
+    },
+    "invitation_resent_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of times invitation was resent (Phase 7A-1.5)"
+    },
+    "last_resent_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When invitation was last resent (Phase 7A-1.5)"
+    },
+    "audit_trace_id": {
+      "type": "string",
+      "description": "Correlation ID for invitation lifecycle"
+    },
+    "created_by_user_id": {
+      "type": "string",
+      "description": "User ID or 'system' who created this invitation"
+    },
+    "created_by_role": {
+      "type": "string",
+      "description": "Role of creator (applicant, system, platform_admin, Phase 7A-1.5)"
+    }
+  },
+  "required": [
+    "tenant_id",
+    "broker_agency_id",
+    "onboarding_case_id",
+    "applicant_email",
+    "token_hash"
+  ]
+}

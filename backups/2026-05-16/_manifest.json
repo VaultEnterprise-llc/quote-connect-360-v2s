@@ -1,0 +1,386 @@
+{
+  "backup_date": "2026-05-16",
+  "initiated_by": "markjosip@outlook.com",
+  "initiated_at": "2026-05-16T01:05:55.453Z",
+  "entities_backed_up": 67,
+  "entities_failed": 10,
+  "results": [
+    {
+      "entity": "BrokerAgencyProfile",
+      "records": 6,
+      "path": "backups/2026-05-16/BrokerAgencyProfile.json"
+    },
+    {
+      "entity": "BrokerPlatformRelationship",
+      "records": 4,
+      "path": "backups/2026-05-16/BrokerPlatformRelationship.json"
+    },
+    {
+      "entity": "BenefitCase",
+      "records": 20,
+      "path": "backups/2026-05-16/BenefitCase.json"
+    },
+    {
+      "entity": "BenefitPlan",
+      "records": 6,
+      "path": "backups/2026-05-16/BenefitPlan.json"
+    },
+    {
+      "entity": "CaseTask",
+      "records": 4,
+      "path": "backups/2026-05-16/CaseTask.json"
+    },
+    {
+      "entity": "ExceptionItem",
+      "records": 2,
+      "path": "backups/2026-05-16/ExceptionItem.json"
+    },
+    {
+      "entity": "ActivityLog",
+      "records": 9,
+      "path": "backups/2026-05-16/ActivityLog.json"
+    },
+    {
+      "entity": "Document",
+      "records": 0,
+      "path": "backups/2026-05-16/Document.json"
+    },
+    {
+      "entity": "CensusVersion",
+      "records": 7,
+      "path": "backups/2026-05-16/CensusVersion.json"
+    },
+    {
+      "entity": "CensusMember",
+      "records": 9,
+      "path": "backups/2026-05-16/CensusMember.json"
+    },
+    {
+      "entity": "CensusImportJob",
+      "records": 4,
+      "path": "backups/2026-05-16/CensusImportJob.json"
+    },
+    {
+      "entity": "CensusImportAuditEvent",
+      "records": 1,
+      "path": "backups/2026-05-16/CensusImportAuditEvent.json"
+    },
+    {
+      "entity": "CensusValidationResult",
+      "records": 0,
+      "path": "backups/2026-05-16/CensusValidationResult.json"
+    },
+    {
+      "entity": "QuoteScenario",
+      "records": 3,
+      "path": "backups/2026-05-16/QuoteScenario.json"
+    },
+    {
+      "entity": "ScenarioPlan",
+      "records": 0,
+      "path": "backups/2026-05-16/ScenarioPlan.json"
+    },
+    {
+      "entity": "Proposal",
+      "records": 2,
+      "path": "backups/2026-05-16/Proposal.json"
+    },
+    {
+      "entity": "QuoteTransmission",
+      "records": 0,
+      "path": "backups/2026-05-16/QuoteTransmission.json"
+    },
+    {
+      "entity": "ContributionModel",
+      "records": 2,
+      "path": "backups/2026-05-16/ContributionModel.json"
+    },
+    {
+      "entity": "PlanRateTable",
+      "records": 6,
+      "path": "backups/2026-05-16/PlanRateTable.json"
+    },
+    {
+      "entity": "RateSetAssignment",
+      "records": 0,
+      "path": "backups/2026-05-16/RateSetAssignment.json"
+    },
+    {
+      "entity": "EmployerGroup",
+      "records": 4,
+      "path": "backups/2026-05-16/EmployerGroup.json"
+    },
+    {
+      "entity": "EmployeeEnrollment",
+      "records": 0,
+      "path": "backups/2026-05-16/EmployeeEnrollment.json"
+    },
+    {
+      "entity": "EnrollmentWindow",
+      "records": 2,
+      "path": "backups/2026-05-16/EnrollmentWindow.json"
+    },
+    {
+      "entity": "EnrollmentMember",
+      "records": 0,
+      "path": "backups/2026-05-16/EnrollmentMember.json"
+    },
+    {
+      "entity": "RenewalCycle",
+      "records": 2,
+      "path": "backups/2026-05-16/RenewalCycle.json"
+    },
+    {
+      "entity": "MasterGeneralAgent",
+      "records": 2,
+      "path": "backups/2026-05-16/MasterGeneralAgent.json"
+    },
+    {
+      "entity": "MasterGeneralAgentUser",
+      "records": 0,
+      "path": "backups/2026-05-16/MasterGeneralAgentUser.json"
+    },
+    {
+      "entity": "MasterGeneralAgentCommissionProfile",
+      "records": 0,
+      "path": "backups/2026-05-16/MasterGeneralAgentCommissionProfile.json"
+    },
+    {
+      "entity": "MasterGeneralAgentAgreement",
+      "records": 0,
+      "path": "backups/2026-05-16/MasterGeneralAgentAgreement.json"
+    },
+    {
+      "entity": "MasterGeneralAgentActivityLog",
+      "records": 0,
+      "path": "backups/2026-05-16/MasterGeneralAgentActivityLog.json"
+    },
+    {
+      "entity": "MasterGroup",
+      "records": 2,
+      "path": "backups/2026-05-16/MasterGroup.json"
+    },
+    {
+      "entity": "MGAMigrationBatch",
+      "records": 1,
+      "path": "backups/2026-05-16/MGAMigrationBatch.json"
+    },
+    {
+      "entity": "MGAQuarantineRecord",
+      "records": 24,
+      "path": "backups/2026-05-16/MGAQuarantineRecord.json"
+    },
+    {
+      "entity": "Agency",
+      "records": 2,
+      "path": "backups/2026-05-16/Agency.json"
+    },
+    {
+      "entity": "TxQuoteCase",
+      "records": 0,
+      "path": "backups/2026-05-16/TxQuoteCase.json"
+    },
+    {
+      "entity": "TxQuoteEmployerProfile",
+      "records": 0,
+      "path": "backups/2026-05-16/TxQuoteEmployerProfile.json"
+    },
+    {
+      "entity": "TxQuoteSupportingDocument",
+      "records": 0,
+      "path": "backups/2026-05-16/TxQuoteSupportingDocument.json"
+    },
+    {
+      "entity": "TxQuoteDestinationRule",
+      "records": 1,
+      "path": "backups/2026-05-16/TxQuoteDestinationRule.json"
+    },
+    {
+      "entity": "TxQuoteContributionStrategy",
+      "records": 0,
+      "path": "backups/2026-05-16/TxQuoteContributionStrategy.json"
+    },
+    {
+      "entity": "TxQuoteCurrentPlanInfo",
+      "records": 0,
+      "path": "backups/2026-05-16/TxQuoteCurrentPlanInfo.json"
+    },
+    {
+      "entity": "TxQuoteDestinationContact",
+      "records": 0,
+      "path": "backups/2026-05-16/TxQuoteDestinationContact.json"
+    },
+    {
+      "entity": "TxQuoteClaimsRequirement",
+      "records": 0,
+      "path": "backups/2026-05-16/TxQuoteClaimsRequirement.json"
+    },
+    {
+      "entity": "TxQuoteCensusOverride",
+      "records": 0,
+      "path": "backups/2026-05-16/TxQuoteCensusOverride.json"
+    },
+    {
+      "entity": "TxQuoteSubmissionLog",
+      "records": 0,
+      "path": "backups/2026-05-16/TxQuoteSubmissionLog.json"
+    },
+    {
+      "entity": "TxQuoteReadinessResult",
+      "records": 0,
+      "path": "backups/2026-05-16/TxQuoteReadinessResult.json"
+    },
+    {
+      "entity": "TxQuoteDestination",
+      "records": 0,
+      "path": "backups/2026-05-16/TxQuoteDestination.json"
+    },
+    {
+      "entity": "QuoteProviderRoute",
+      "records": 2,
+      "path": "backups/2026-05-16/QuoteProviderRoute.json"
+    },
+    {
+      "entity": "PolicyMatchResult",
+      "records": 1,
+      "path": "backups/2026-05-16/PolicyMatchResult.json"
+    },
+    {
+      "entity": "HelpContent",
+      "records": 81,
+      "path": "backups/2026-05-16/HelpContent.json"
+    },
+    {
+      "entity": "HelpContentVersion",
+      "records": 153,
+      "path": "backups/2026-05-16/HelpContentVersion.json"
+    },
+    {
+      "entity": "HelpTarget",
+      "records": 89,
+      "path": "backups/2026-05-16/HelpTarget.json"
+    },
+    {
+      "entity": "HelpModule",
+      "records": 6,
+      "path": "backups/2026-05-16/HelpModule.json"
+    },
+    {
+      "entity": "HelpPage",
+      "records": 12,
+      "path": "backups/2026-05-16/HelpPage.json"
+    },
+    {
+      "entity": "HelpSection",
+      "records": 40,
+      "path": "backups/2026-05-16/HelpSection.json"
+    },
+    {
+      "entity": "HelpManualTopic",
+      "records": 67,
+      "path": "backups/2026-05-16/HelpManualTopic.json"
+    },
+    {
+      "entity": "HelpManualTopicTargetMap",
+      "records": 10,
+      "path": "backups/2026-05-16/HelpManualTopicTargetMap.json"
+    },
+    {
+      "entity": "HelpSearchLog",
+      "records": 3,
+      "path": "backups/2026-05-16/HelpSearchLog.json"
+    },
+    {
+      "entity": "HelpAuditLog",
+      "records": 27,
+      "path": "backups/2026-05-16/HelpAuditLog.json"
+    },
+    {
+      "entity": "HelpAIQuestionLog",
+      "records": 3,
+      "path": "backups/2026-05-16/HelpAIQuestionLog.json"
+    },
+    {
+      "entity": "HelpCoverageSnapshot",
+      "records": 2,
+      "path": "backups/2026-05-16/HelpCoverageSnapshot.json"
+    },
+    {
+      "entity": "HelpAITrainingQueue",
+      "records": 159,
+      "path": "backups/2026-05-16/HelpAITrainingQueue.json"
+    },
+    {
+      "entity": "UserManual",
+      "records": 1,
+      "path": "backups/2026-05-16/UserManual.json"
+    },
+    {
+      "entity": "Tenant",
+      "records": 0,
+      "path": "backups/2026-05-16/Tenant.json"
+    },
+    {
+      "entity": "SeedRun",
+      "records": 1,
+      "path": "backups/2026-05-16/SeedRun.json"
+    },
+    {
+      "entity": "SeedRunStep",
+      "records": 9,
+      "path": "backups/2026-05-16/SeedRunStep.json"
+    },
+    {
+      "entity": "ViewPreset",
+      "records": 0,
+      "path": "backups/2026-05-16/ViewPreset.json"
+    },
+    {
+      "entity": "CaseFilterPreset",
+      "records": 0,
+      "path": "backups/2026-05-16/CaseFilterPreset.json"
+    }
+  ],
+  "errors": [
+    {
+      "entity": "BrokerAgencyUser",
+      "error": "Entity not accessible or empty"
+    },
+    {
+      "entity": "BrokerAgencyInvitation",
+      "error": "Entity not accessible or empty"
+    },
+    {
+      "entity": "BrokerAgencyContact",
+      "error": "Entity not accessible or empty"
+    },
+    {
+      "entity": "BrokerAgencyOnboardingCase",
+      "error": "Entity not accessible or empty"
+    },
+    {
+      "entity": "BrokerComplianceDocument",
+      "error": "Entity not accessible or empty"
+    },
+    {
+      "entity": "BrokerEmployerRelationship",
+      "error": "Entity not accessible or empty"
+    },
+    {
+      "entity": "BrokerMGARelationship",
+      "error": "Entity not accessible or empty"
+    },
+    {
+      "entity": "BrokerScopeAccessGrant",
+      "error": "Entity not accessible or empty"
+    },
+    {
+      "entity": "MGAReportSchedule",
+      "error": "Entity not accessible or empty"
+    },
+    {
+      "entity": "MGAReportTemplate",
+      "error": "Entity not accessible or empty"
+    }
+  ]
+}

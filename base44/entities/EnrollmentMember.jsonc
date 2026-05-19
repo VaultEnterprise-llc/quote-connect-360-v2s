@@ -1,0 +1,86 @@
+{
+  "name": "EnrollmentMember",
+  "type": "object",
+  "properties": {
+    "master_general_agent_id": {
+      "type": "string",
+      "description": "MGA scope \u2014 nullable during migration staging; required after Phase 4 validation"
+    },
+    "master_group_id": {
+      "type": "string",
+      "description": "MasterGroup scope \u2014 nullable during migration staging"
+    },
+    "enrollment_window_id": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "census_member_id": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "invited",
+        "enrolled",
+        "waived",
+        "terminated"
+      ],
+      "default": "pending"
+    },
+    "coverage_tier": {
+      "type": "string",
+      "enum": [
+        "employee_only",
+        "employee_spouse",
+        "employee_children",
+        "family"
+      ]
+    },
+    "waiver_reason": {
+      "type": "string"
+    },
+    "enrolled_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "invited_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "employer_name": {
+      "type": "string"
+    },
+    "mga_migration_batch_id": {
+      "type": "string"
+    },
+    "mga_migration_status": {
+      "type": "string",
+      "enum": [
+        "not_migrated",
+        "migrated",
+        "validated",
+        "anomaly",
+        "quarantined"
+      ],
+      "default": "not_migrated"
+    }
+  },
+  "required": [
+    "enrollment_window_id",
+    "case_id",
+    "first_name",
+    "last_name"
+  ]
+}

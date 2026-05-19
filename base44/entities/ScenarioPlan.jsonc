@@ -1,0 +1,81 @@
+{
+  "name": "ScenarioPlan",
+  "type": "object",
+  "properties": {
+    "master_general_agent_id": {
+      "type": "string",
+      "description": "MGA scope \u2014 nullable during migration staging; required after Phase 4 validation"
+    },
+    "master_group_id": {
+      "type": "string",
+      "description": "MasterGroup scope \u2014 nullable during migration staging"
+    },
+    "scenario_id": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "plan_id": {
+      "type": "string"
+    },
+    "plan_name": {
+      "type": "string"
+    },
+    "carrier": {
+      "type": "string"
+    },
+    "plan_type": {
+      "type": "string"
+    },
+    "network_type": {
+      "type": "string"
+    },
+    "rate_table_id": {
+      "type": "string"
+    },
+    "employer_contribution_ee": {
+      "type": "number",
+      "default": 100
+    },
+    "employer_contribution_dep": {
+      "type": "number",
+      "default": 50
+    },
+    "contribution_type": {
+      "type": "string",
+      "enum": [
+        "percentage",
+        "flat_dollar"
+      ],
+      "default": "percentage"
+    },
+    "is_recommended": {
+      "type": "boolean",
+      "default": false
+    },
+    "notes": {
+      "type": "string"
+    },
+    "mga_migration_batch_id": {
+      "type": "string"
+    },
+    "mga_migration_status": {
+      "type": "string",
+      "enum": [
+        "not_migrated",
+        "migrated",
+        "validated",
+        "anomaly",
+        "quarantined"
+      ],
+      "default": "not_migrated"
+    }
+  },
+  "required": [
+    "scenario_id",
+    "case_id",
+    "plan_id",
+    "plan_name"
+  ]
+}

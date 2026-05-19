@@ -1,0 +1,104 @@
+{
+  "name": "QuoteTransmission",
+  "type": "object",
+  "properties": {
+    "master_general_agent_id": {
+      "type": "string",
+      "description": "MGA scope \u2014 nullable during migration staging; required after Phase 4 validation"
+    },
+    "master_group_id": {
+      "type": "string",
+      "description": "MasterGroup scope \u2014 nullable during migration staging"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "census_version_id": {
+      "type": "string"
+    },
+    "census_file_name": {
+      "type": "string"
+    },
+    "provider_code": {
+      "type": "string"
+    },
+    "provider_name": {
+      "type": "string"
+    },
+    "recipient_email": {
+      "type": "string"
+    },
+    "cc_email": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "success",
+        "failed"
+      ],
+      "default": "pending"
+    },
+    "failure_reason": {
+      "type": "string"
+    },
+    "sent_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sent_by": {
+      "type": "string"
+    },
+    "turnaround_date_requested": {
+      "type": "string",
+      "format": "date"
+    },
+    "product_type": {
+      "type": "string"
+    },
+    "contact_override": {
+      "type": "string"
+    },
+    "internal_note": {
+      "type": "string"
+    },
+    "selected_provider_batch": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "idempotency_key": {
+      "type": "string",
+      "description": "Phase 3 service design: idempotency key for this transmission \u2014 prevents duplicate sends"
+    },
+    "mga_migration_batch_id": {
+      "type": "string"
+    },
+    "mga_migration_status": {
+      "type": "string",
+      "enum": [
+        "not_migrated",
+        "migrated",
+        "validated",
+        "anomaly",
+        "quarantined"
+      ],
+      "default": "not_migrated"
+    }
+  },
+  "required": [
+    "case_id",
+    "census_version_id",
+    "provider_code",
+    "provider_name",
+    "recipient_email"
+  ]
+}
