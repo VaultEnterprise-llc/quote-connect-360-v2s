@@ -1,8 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Trash2, Copy, Download, X, CheckSquare, Square } from "lucide-react";
+import { Download, X, CheckSquare, Square } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 /**

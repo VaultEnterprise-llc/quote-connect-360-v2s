@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Plus, Zap, Trash2, Edit2, CheckCircle2, Clock, Mail, Users } from "lucide-react";
+import { Plus, Zap, Trash2, Edit2, CheckCircle2, Clock } from "lucide-react";
 
 const MOCK_RULES = [
   {

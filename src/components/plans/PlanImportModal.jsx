@@ -8,8 +8,8 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import {
   Upload, Download, CheckCircle2, AlertTriangle, RefreshCw,
-  ArrowRight, ArrowLeft, FileText, X, AlertCircle, Info,
-  ChevronDown, ChevronUp, Eye, EyeOff
+  ArrowRight, ArrowLeft, FileText, AlertCircle, Info,
+  ChevronDown, ChevronUp
 } from "lucide-react";
 
 // ─── Field definitions ────────────────────────────────────────────────────────

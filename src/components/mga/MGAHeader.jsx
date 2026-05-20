@@ -4,7 +4,6 @@
  * Safety: tax_id_ein and banking_setup_status NOT shown (no financial permission in Phase 5).
  */
 import React from 'react';
-import { Badge } from '@/components/ui/badge';
 import { Building2, AlertTriangle, CheckCircle2, Clock } from 'lucide-react';
 
 const STATUS_STYLES = {

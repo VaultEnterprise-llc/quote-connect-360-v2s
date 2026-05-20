@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Play, Copy, Plus, Trash2, Clock, CheckCircle2, XCircle, ChevronDown, ChevronRight, Loader2, Send } from "lucide-react";
+import { Copy, Plus, Trash2, Clock, CheckCircle2, XCircle, Loader2, Send } from "lucide-react";
 
 const METHOD_COLORS = {
   GET: "bg-blue-100 text-blue-700 border-blue-200",

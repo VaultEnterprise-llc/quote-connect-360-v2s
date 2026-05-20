@@ -4,7 +4,6 @@ import { useQuery } from "@tanstack/react-query";
 import { base44 } from "@/api/base44Client";
 import { useAuth } from "@/lib/AuthContext";
 import {
-  AlertCircle,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";

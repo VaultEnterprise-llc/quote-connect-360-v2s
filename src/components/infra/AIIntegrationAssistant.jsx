@@ -6,8 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
 import { base44 } from "@/api/base44Client";
 import {
-  Bot, Sparkles, Send, Copy, CheckCircle2, AlertCircle,
-  Code2, Zap, RefreshCw, ChevronRight, Loader2, Brain,
+  Bot, Sparkles, Send, Copy, AlertCircle,
+  Code2, RefreshCw, ChevronRight, Loader2, Brain,
   GitMerge, Plug, FileCode, MessageSquare
 } from "lucide-react";
 

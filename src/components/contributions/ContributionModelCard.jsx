@@ -7,10 +7,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Slider } from "@/components/ui/slider";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  CheckCircle2, AlertCircle, AlertTriangle, Trash2, Calculator,
-  DollarSign, Users, TrendingDown, TrendingUp, Copy, ChevronDown, ChevronUp
+  CheckCircle2, AlertCircle, Trash2, Calculator,
+  DollarSign, Users, ChevronDown, ChevronUp
 } from "lucide-react";
 
 const ACA_THRESHOLD_PCT = 9.02;

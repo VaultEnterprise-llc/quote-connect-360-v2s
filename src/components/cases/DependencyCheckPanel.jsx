@@ -1,7 +1,6 @@
 import React from "react";
 import { AlertTriangle, AlertCircle, CheckCircle2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Alert } from "@/components/ui/alert";
 
 export default function DependencyCheckPanel({ tasks, caseData }) {
   const pendingTasks = tasks.filter(t => t.status === "pending");

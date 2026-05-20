@@ -11,7 +11,7 @@ import { base44 } from '@/api/base44Client';
 import documentAccessService from '@/lib/services/documentAccessService';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Upload, Download, Lock } from 'lucide-react';
+import { Upload, Lock } from 'lucide-react';
 import DocumentUploadModal from './DocumentUploadModal';
 import DocumentDetailDrawer from './DocumentDetailDrawer';
 

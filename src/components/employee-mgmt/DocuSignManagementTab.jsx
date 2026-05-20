@@ -2,14 +2,11 @@ import React, { useState, useMemo } from "react";
 import { base44 } from "@/api/base44Client";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import {
-  FileSignature, Send, CheckCircle2, XCircle, Clock,
-  AlertTriangle, RefreshCw, Search, Filter, X, ExternalLink,
+  FileSignature, Send, CheckCircle2, XCircle, Clock, RefreshCw, Search, X,
   Download, Eye
 } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
 import { format } from "date-fns";

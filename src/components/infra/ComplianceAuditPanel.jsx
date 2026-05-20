@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Shield, Download, Search, CheckCircle2, AlertTriangle, XCircle, Lock, FileText, Clock, Filter } from "lucide-react";
+import { Download, Search, CheckCircle2, AlertTriangle, Lock, FileText, Clock } from "lucide-react";
 import { format } from "date-fns";
 
 const COMPLIANCE_FRAMEWORKS = [

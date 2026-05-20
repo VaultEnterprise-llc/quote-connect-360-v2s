@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/components/ui/use-toast";
-import { Sparkles, Save, Upload } from "lucide-react";
+import { Sparkles, Save } from "lucide-react";
 
 const CATEGORIES = [
   { value: "getting_started", label: "Getting Started" },

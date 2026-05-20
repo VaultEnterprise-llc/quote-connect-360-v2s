@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Folder, FileText, CheckCircle2, AlertCircle, Download, Eye } from "lucide-react";
+import { FileText, CheckCircle2, AlertCircle, Download, Eye } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";

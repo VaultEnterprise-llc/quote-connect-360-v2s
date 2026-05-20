@@ -9,7 +9,7 @@ import { listMasterGroups } from '@/lib/mga/services/masterGroupService';
 import { listCensusVersions } from '@/lib/mga/services/censusService';
 import { listQuotes } from '@/lib/mga/services/quoteService';
 import { listAuditEventsByScope } from '@/lib/mga/services/auditService';
-import { Briefcase, Building2, FileText, Users, AlertCircle, Activity } from 'lucide-react';
+import { Briefcase, Building2, FileText, Users, Activity } from 'lucide-react';
 
 function KPICard({ label, value, icon: IconComponent, onClick, loading, denied }) {
   return (

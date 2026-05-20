@@ -1,9 +1,9 @@
 import React from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { CreditCard, TrendingUp, AlertTriangle, Download } from "lucide-react";
+import { Download } from "lucide-react";
 
 const USAGE_METRICS = [
   { name: "API Requests", usage: 28500, limit: 100000, unit: "req/month", percentage: 28.5 },

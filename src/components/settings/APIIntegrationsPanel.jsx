@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { Input } from "@/components/ui/input";
-import { AlertCircle, CheckCircle2, Zap, Settings, Eye, EyeOff, Copy } from "lucide-react";
+import { CheckCircle2, Settings, Eye, EyeOff, Copy } from "lucide-react";
 
 const INTEGRATIONS = [
   {

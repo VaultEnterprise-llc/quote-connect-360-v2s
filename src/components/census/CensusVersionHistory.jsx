@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Calendar, Users, AlertCircle, CheckCircle2, GitCompare } from "lucide-react";
+import { Calendar, Users, AlertCircle, GitCompare } from "lucide-react";
 import { format } from "date-fns";
 import StatusBadge from "@/components/shared/StatusBadge";
 import CensusVersionComparison from "./CensusVersionComparison";

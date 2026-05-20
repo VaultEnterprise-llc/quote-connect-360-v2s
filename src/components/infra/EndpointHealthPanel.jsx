@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, XCircle, AlertCircle, RefreshCw, Clock, Wifi } from "lucide-react";
+import { CheckCircle2, XCircle, RefreshCw, Wifi } from "lucide-react";
 
 const ENDPOINTS = [
   { name: "DocuSign API", url: "https://demo.docusign.net/restapi/v2.1", category: "e-sign", healthPath: "/ping" },

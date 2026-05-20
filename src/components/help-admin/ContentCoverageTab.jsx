@@ -9,8 +9,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { HELP_TARGETS, MODULES } from "@/lib/helpTargetRegistry";
 import { useToast } from "@/components/ui/use-toast";
-import {
-  AlertCircle, CheckCircle2, Clock, Filter, Download,
+import { Filter, Download,
   Sparkles, Trash2, Eye, EyeOff, X, CheckSquare
 } from "lucide-react";
 

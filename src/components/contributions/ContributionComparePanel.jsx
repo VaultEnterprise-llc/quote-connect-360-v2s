@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2, AlertCircle, TrendingDown, TrendingUp, Award } from "lucide-react";
+import { CheckCircle2, AlertCircle, TrendingDown, Award } from "lucide-react";
 
 const ACA_THRESHOLD_PCT = 9.02;
 const MEDIAN_INCOME = 60000;

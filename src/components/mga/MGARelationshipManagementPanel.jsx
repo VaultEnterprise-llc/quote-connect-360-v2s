@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { base44 } from '@/api/base44Client';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Loader } from 'lucide-react';
 import MGARelationshipStatusBadge from './MGARelationshipStatusBadge';
 import MGARelationshipDetailDrawer from './MGARelationshipDetailDrawer';
 import MGARelationshipLifecycleActions from './MGARelationshipLifecycleActions';

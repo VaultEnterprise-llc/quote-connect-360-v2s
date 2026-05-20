@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
-import { Trash2, Archive, Eye, EyeOff, AlertCircle, Loader2, CheckCircle2 } from "lucide-react";
+import { Trash2, Archive, Eye, EyeOff, Loader2 } from "lucide-react";
 import { HELP_TARGETS } from "@/lib/helpTargetRegistry";
 
 export default function BulkActionsPanel({ contentMap }) {

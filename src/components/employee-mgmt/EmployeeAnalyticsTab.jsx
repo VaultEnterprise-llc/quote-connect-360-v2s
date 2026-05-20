@@ -6,10 +6,8 @@ import {
   PieChart, Pie, Cell, Legend
 } from "recharts";
 import {
-  TrendingUp, Users, Heart, DollarSign, CheckCircle2,
-  AlertTriangle, UserCheck, FileSignature
+  TrendingUp, Users, Heart, FileSignature
 } from "lucide-react";
-import { format, parseISO } from "date-fns";
 
 const COLORS = ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#06b6d4"];
 

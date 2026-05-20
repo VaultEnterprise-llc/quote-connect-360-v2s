@@ -7,7 +7,7 @@ import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Calendar, TrendingUp, TrendingDown, Minus, Pencil, AlertTriangle, StickyNote, ChevronDown, ChevronUp, Building2 } from "lucide-react";
+import { TrendingUp, TrendingDown, Minus, Pencil, AlertTriangle, StickyNote, ChevronDown, ChevronUp } from "lucide-react";
 import { format, differenceInDays } from "date-fns";
 import StatusBadge from "@/components/shared/StatusBadge";
 

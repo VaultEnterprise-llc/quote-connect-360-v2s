@@ -1,9 +1,7 @@
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  CheckCircle2, AlertCircle, Clock, MessageSquare, TrendingUp,
+import { AlertCircle, Clock, MessageSquare, TrendingUp,
   Sparkles, BookOpen, ShieldAlert
 } from "lucide-react";
 import { HELP_TARGETS } from "@/lib/helpTargetRegistry";

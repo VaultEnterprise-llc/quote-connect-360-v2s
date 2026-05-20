@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { base44 } from '@/api/base44Client';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Plus, Edit2, Pause, Play, X } from 'lucide-react';
+import { Plus, Edit2, Pause, X } from 'lucide-react';
 import MGAReportScheduleModal from './MGAReportScheduleModal';
 import MGAReportScheduleStatusBadge from './MGAReportScheduleStatusBadge';
 import { format } from 'date-fns';

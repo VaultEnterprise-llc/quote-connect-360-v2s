@@ -16,7 +16,6 @@ import PayloadValidatorPanel from "@/components/infra/PayloadValidatorPanel";
 import ApiReferencePanel from "@/components/infra/ApiReferencePanel";
 import AuthGuidePanel from "@/components/infra/AuthGuidePanel";
 import ApiKeysPanel from "@/components/infra/ApiKeysPanel";
-import WebhooksPanel from "@/components/infra/WebhooksPanel";
 import DataModelsPanel from "@/components/infra/DataModelsPanel";
 import EventLogPanel from "@/components/infra/EventLogPanel";
 
@@ -27,13 +26,12 @@ import OAuthSSOPanel from "@/components/infra/OAuthSSOPanel";
 import SDKsAndLibrariesPanel from "@/components/infra/SDKsAndLibrariesPanel";
 import GraphQLPanel from "@/components/infra/GraphQLPanel";
 import DataTransformationPanel from "@/components/infra/DataTransformationPanel";
-import APIPlaygroundPanel from "@/components/infra/APIPlaygroundPanel";
 import APITesterPanel from "@/components/infra/APITesterPanel";
 import WebhookTesterPanel from "@/components/infra/WebhookTesterPanel";
 import IntegrationMarketplacePanel from "@/components/infra/IntegrationMarketplacePanel";
 import ComplianceAuditPanel from "@/components/infra/ComplianceAuditPanel";
 
-import { RefreshCw, Shield, Brain, Sparkles, Zap } from "lucide-react";
+import { RefreshCw, Shield, Brain, Sparkles } from "lucide-react";
 
 const TAB_GROUPS = [
   {

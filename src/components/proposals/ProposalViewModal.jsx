@@ -9,7 +9,7 @@ import {
   CheckCircle, Send, Eye, XCircle, Building2, Calendar, Users,
   DollarSign, FileText, Clock, Printer, ChevronRight, AlertTriangle, ExternalLink
 } from "lucide-react";
-import { format, parseISO, isAfter, differenceInDays } from "date-fns";
+import { format, parseISO, differenceInDays } from "date-fns";
 import SendProposalDialog from "@/components/proposals/SendProposalDialog";
 
 const STATUS_CONFIG = {

@@ -3,18 +3,16 @@ import { base44 } from "@/api/base44Client";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import {
   Plus, Search, Calendar, Users, ChevronDown, ChevronUp,
-  Pencil, Trash2, AlertTriangle, CheckCircle, Clock, X
+  Pencil, Trash2, Clock, X
 } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
-import { format, parseISO, differenceInDays, isAfter } from "date-fns";
+import { format, parseISO, differenceInDays } from "date-fns";
 import EmptyState from "@/components/shared/EmptyState";
 import CreateEnrollmentModal from "@/components/enrollment/CreateEnrollmentModal";
 

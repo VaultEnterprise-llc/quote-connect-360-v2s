@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Zap, Plus, Trash2, Copy, CheckCircle2, XCircle, Edit2 } from "lucide-react";
+import { Plus, Trash2, Edit2 } from "lucide-react";
 
 const MOCK_WEBHOOKS = [
   { id: "wh1", url: "https://payroll.acme.com/webhooks/benefits", events: ["enrollment.completed", "enrollment.waived"], status: "active", lastDelivery: "2026-03-22 10:15" },

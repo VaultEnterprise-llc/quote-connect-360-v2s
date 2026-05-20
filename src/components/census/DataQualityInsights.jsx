@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { AlertCircle, TrendingDown, Target, Zap } from "lucide-react";
+import { AlertCircle, Target } from "lucide-react";
 
 export default function DataQualityInsights({ fieldStats, rows }) {
   if (!fieldStats || !rows || rows.length === 0) {

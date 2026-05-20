@@ -1,7 +1,6 @@
 import React, { useMemo } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { AlertTriangle, CheckCircle2, Hourglass, Eye, Zap } from "lucide-react";
+import { AlertTriangle, CheckCircle2, Hourglass, Eye } from "lucide-react";
 
 const COLUMNS = [
   { id: "new", label: "New", icon: AlertTriangle, color: "bg-blue-50 border-blue-200", bgColor: "bg-blue-100" },

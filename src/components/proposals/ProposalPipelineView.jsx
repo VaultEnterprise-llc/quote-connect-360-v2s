@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import { base44 } from "@/api/base44Client";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import {
   FileText, Send, Eye, CheckCircle, XCircle, Clock, AlertTriangle,
   ChevronRight, Bell, GitBranch
 } from "lucide-react";
-import { format, parseISO, differenceInDays, isAfter } from "date-fns";
+import { format, parseISO, differenceInDays } from "date-fns";
 import SendReminderDialog from "@/components/proposals/SendReminderDialog";
 import NewVersionDialog from "@/components/proposals/NewVersionDialog";
 

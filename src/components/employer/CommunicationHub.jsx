@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { MessageSquare, Plus, Calendar, Mail } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { format } from "date-fns";
 
 // Communication log sourced from ActivityLog for the case (read-only history).
 // "Send Email" and "Schedule Call" buttons are UI placeholders pending backend integration.

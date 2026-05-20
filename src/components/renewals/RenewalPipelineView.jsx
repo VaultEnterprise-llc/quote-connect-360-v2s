@@ -1,10 +1,7 @@
 import React from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, TrendingUp, TrendingDown, Minus } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { format } from "date-fns";
-import StatusBadge from "@/components/shared/StatusBadge";
-import RenewalCard from "./RenewalCard";
 
 const STAGE_CONFIG = {
   pre_renewal:       { label: "Pre-Renewal", order: 0, color: "bg-slate-50 border-slate-200" },

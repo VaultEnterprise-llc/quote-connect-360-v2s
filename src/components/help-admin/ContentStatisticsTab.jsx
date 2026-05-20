@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
 import { HELP_TARGETS, MODULES } from "@/lib/helpTargetRegistry";
-import { AlertCircle, CheckCircle2, Clock, TrendingUp } from "lucide-react";
 
 const MODULE_LABELS = {
   DASHBOARD:"Dashboard", CASES:"Cases", CENSUS:"Census", QUOTES:"Quotes",

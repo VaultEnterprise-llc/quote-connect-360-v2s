@@ -3,17 +3,15 @@ import { base44 } from "@/api/base44Client";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Progress } from "@/components/ui/progress";
-import { CheckCircle, ChevronRight, ChevronLeft, AlertCircle } from "lucide-react";
+import { CheckCircle, ChevronRight, ChevronLeft } from "lucide-react";
 import { format } from "date-fns";
 
 import EnrollmentDeadlineBanner from "./EnrollmentDeadlineBanner";
 import DependentForm from "./DependentForm";
-import PlanSelectionStep from "./PlanSelectionStep";
 import PlanSelectionEnhanced from "./PlanSelectionEnhanced";
 import PlanCompareModal from "./PlanCompareModal";
 import ProviderSearch from "./ProviderSearch";

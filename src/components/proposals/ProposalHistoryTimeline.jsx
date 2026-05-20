@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { FileText, Send, Eye, CheckCircle, XCircle, Clock } from "lucide-react";
+import { FileText, Send, Eye, CheckCircle, XCircle } from "lucide-react";
 import { format } from "date-fns";
 
 export default function ProposalHistoryTimeline({ proposals }) {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { base44 } from '@/api/base44Client';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Plus, Edit2, Archive, Play } from 'lucide-react';
+import { Plus, Edit2, Archive } from 'lucide-react';
 import MGAReportTemplateModal from './MGAReportTemplateModal';
 
 export default function MGAReportTemplatesPanel({ masterGroupId, masterGeneralAgentId }) {

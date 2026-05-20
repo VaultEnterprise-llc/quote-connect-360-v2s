@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { ChevronDown, ChevronUp, AlertCircle, AlertTriangle } from "lucide-react";
 
 export default function ErrorDetailPanel({ rows, mapping, validateRow, transformRow }) {

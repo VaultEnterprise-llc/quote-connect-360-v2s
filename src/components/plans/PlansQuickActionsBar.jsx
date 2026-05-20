@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Plus, Copy, ArrowRightLeft, Upload, Archive, FileWarning, FolderOpen } from "lucide-react";
+import { Plus, Copy, ArrowRightLeft, Upload, FileWarning, FolderOpen } from "lucide-react";
 
 export default function PlansQuickActionsBar({
   onCreate,

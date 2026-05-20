@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Copy, Trash2, FileDown } from "lucide-react";
+import { CheckCircle2, Trash2, FileDown } from "lucide-react";
 
 export default function PlanBulkActionsPanel({ selectedCount, plans, onBulkAction }) {
   const [loading, setLoading] = useState(false);

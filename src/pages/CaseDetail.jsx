@@ -3,8 +3,7 @@ import { base44 } from "@/api/base44Client";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { Link, useParams } from "react-router-dom";
 import {
-  ArrowLeft, Users, FileText, ClipboardCheck, Calendar,
-  Clock, FileCheck, AlertTriangle, Briefcase, Pencil, X, Copy, Send
+  ArrowLeft, Users, FileText, ClipboardCheck, Calendar, FileCheck, AlertTriangle, Briefcase, Pencil, X, Copy, Send
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -31,10 +30,9 @@ import ActivityTab       from "@/components/cases/ActivityTab";
 import StageValidationWarnings from "@/components/cases/StageValidationWarnings";
 import DependencyCheckPanel from "@/components/cases/DependencyCheckPanel";
 import CloneCaseModal    from "@/components/cases/CloneCaseModal";
-import TxQuoteWorkspace from "@/components/cases/TxQuoteWorkspace";
 import TxQuoteOptionsModal from "@/components/cases/TxQuoteOptionsModal";
 import AuditTrailViewer  from "@/components/shared/AuditTrailViewer";
-import { getCaseWorkflowSignals, getNextCaseStage, getStageRequirements } from "@/components/cases/caseWorkflow";
+import { getCaseWorkflowSignals, getNextCaseStage } from "@/components/cases/caseWorkflow";
 import { getTxQuoteDisabledReason, isTxQuoteStepComplete } from "@/components/cases/txQuoteWorkflow";
 import { getTxQuoteButtonState } from "@/components/cases/txQuoteEngine";
 

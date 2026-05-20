@@ -5,12 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
 import {
   CheckCircle2, AlertCircle, Sparkles, MessageSquare, TrendingUp,
-  Star, Search, X, ChevronDown, ChevronUp, Trash2, RefreshCw
+  Star, Search, X, ChevronDown, ChevronUp, Trash2
 } from "lucide-react";
 import { HELP_TARGETS } from "@/lib/helpTargetRegistry";
 import { formatDistanceToNow } from "date-fns";

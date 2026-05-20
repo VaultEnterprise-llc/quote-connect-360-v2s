@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, Briefcase, AlertCircle } from "lucide-react";
+import { Users, AlertCircle } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 
 export default function TeamWorkload({ cases = [], tasks = [] }) {
