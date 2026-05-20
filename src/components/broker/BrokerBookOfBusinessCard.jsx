@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Briefcase } from 'lucide-react';
 
 export default function BrokerBookOfBusinessCard({ dashboard }) {

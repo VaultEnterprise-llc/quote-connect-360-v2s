@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { base44 } from "@/api/base44Client";
 import { useQuery } from "@tanstack/react-query";
-import { ArrowRight, Users, UserX, UserPlus, TrendingUp } from "lucide-react";
+import { ArrowRight, UserX, UserPlus } from "lucide-react";
 
 export default function CensusVersionComparison({ version1Id, version2Id, open, onOpenChange }) {
   const { data: members1 = [] } = useQuery({

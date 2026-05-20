@@ -8,7 +8,6 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { X } from 'lucide-react';
 import MGABrokerAgencyContactsPanel from './MGABrokerAgencyContactsPanel';
 import MGABrokerAgencySettingsPanel from './MGABrokerAgencySettingsPanel';
 import { format } from 'date-fns';

@@ -14,10 +14,9 @@ import { useToast } from "@/components/ui/use-toast";
 import { Link } from "react-router-dom";
 import {
   Search, ChevronRight, ChevronDown, Edit2, Eye, EyeOff, Trash2,
-  Sparkles, Save, AlertCircle, CheckCircle2, BarChart2, Play,
-  LayoutDashboard, FileBarChart, TrendingUp, BookOpen, Database,
-  X, Target, MessageSquare, Zap, Settings2, RefreshCw, Plus,
-  Activity, ShieldAlert, Scale, Workflow, FileJson
+  Sparkles, Save, BarChart2, BookOpen, Database,
+  X, Target, MessageSquare, Zap, Settings2,
+  Activity, Workflow, FileJson
 } from "lucide-react";
 import PageHeader from "@/components/shared/PageHeader";
 import ReactMarkdown from "react-markdown";

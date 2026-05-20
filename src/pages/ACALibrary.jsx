@@ -1,14 +1,13 @@
 import React, { useState, useMemo } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PageHeader from "@/components/shared/PageHeader";
 import {
-  Search, Shield, AlertTriangle, CheckCircle2, Info, ChevronDown, ChevronRight,
-  MapPin, BookOpen, FileText, Scale, DollarSign, Users, Calendar, ExternalLink, Filter
+  Search, AlertTriangle, CheckCircle2, Info, ChevronDown, ChevronRight,
+  MapPin, Scale, Users, Calendar
 } from "lucide-react";
 
 // ─── Full 50-State ACA Rules Data ──────────────────────────────────────────────

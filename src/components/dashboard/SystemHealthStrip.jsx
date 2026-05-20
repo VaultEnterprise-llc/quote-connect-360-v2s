@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { AlertTriangle, CheckCircle2, FileWarning, ShieldAlert, Workflow } from "lucide-react";
+import { CheckCircle2, FileWarning, ShieldAlert, Workflow } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const ITEMS = [

@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { AlertTriangle, TrendingUp, TrendingDown, Clock, DollarSign, XCircle } from "lucide-react";
+import { AlertTriangle, TrendingUp, Clock, DollarSign, XCircle } from "lucide-react";
 
 /**
  * RenewalKPIBar

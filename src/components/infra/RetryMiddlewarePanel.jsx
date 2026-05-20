@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { RefreshCw, Play, CheckCircle2, XCircle, Clock } from "lucide-react";
+import { RefreshCw, Play, CheckCircle2, XCircle } from "lucide-react";
 
 const DEFAULT_POLICY = {
   max_attempts: 3,

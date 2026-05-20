@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from "react";
+import { useEffect, useCallback } from "react";
 
 // Key scoped to enrollmentId so multiple enrollment windows don't collide
 const getDraftKey = (enrollmentId) => `enrollment_draft_${enrollmentId || "anon"}`;

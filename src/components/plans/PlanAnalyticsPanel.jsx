@@ -1,8 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
-import { TrendingUp, Calendar, Users } from "lucide-react";
 
 export default function PlanAnalyticsPanel({ plans }) {
   const medicalPlans = plans.filter(p => p.plan_type === "medical");

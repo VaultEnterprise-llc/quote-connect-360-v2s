@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { AlertCircle, CheckCircle2, Download } from "lucide-react";
+import { AlertCircle, Download } from "lucide-react";
 import PageHeader from "@/components/shared/PageHeader";
 import { HELP_TARGETS, MODULES } from "@/lib/helpTargetRegistry";
 

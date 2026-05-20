@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Download, Calendar, Users, DollarSign, AlertCircle, FileSignature } from "lucide-react";
+import { CheckCircle, Download, Calendar, Users, AlertCircle, FileSignature } from "lucide-react";
 import { format } from "date-fns";
 import DocuSignStatusBadge from "./DocuSignStatusBadge";
 import DocuSignSigningPane from "./DocuSignSigningPane";

@@ -6,7 +6,7 @@
  */
 import React, { useState, useEffect } from 'react';
 import { listAuditEventsByScope } from '@/lib/mga/services/auditService';
-import { Activity, ShieldAlert } from 'lucide-react';
+import { Activity } from 'lucide-react';
 import { format } from 'date-fns';
 
 const CATEGORY_STYLES = {

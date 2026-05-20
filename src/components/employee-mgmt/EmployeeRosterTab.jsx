@@ -2,14 +2,11 @@ import React, { useState, useMemo } from "react";
 import { base44 } from "@/api/base44Client";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import {
-  Search, Filter, Plus, Mail, CheckCircle2, Clock, AlertTriangle,
-  UserX, RefreshCw, Download, Pencil, Trash2, ChevronDown, ChevronUp,
-  Send, X, Eye, User, Users
+  Search, Plus, Download, Pencil, Trash2,
+  Send, X, Users
 } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
@@ -17,7 +14,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/components/ui/use-toast";
 import { format } from "date-fns";
 import EmptyState from "@/components/shared/EmptyState";
-import StatusBadge from "@/components/shared/StatusBadge";
 
 const STATUS_COLORS = {
   invited:   "bg-amber-100 text-amber-700 border-amber-200",

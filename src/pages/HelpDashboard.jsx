@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { base44 } from "@/api/base44Client";
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useAuth } from "@/lib/AuthContext";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,8 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import {
-  ShieldCheck, AlertCircle, CheckCircle2, Clock, TrendingUp,
-  BookOpen, Sparkles, Eye, Camera, ExternalLink, Target, FileText
+  ShieldCheck, AlertCircle, CheckCircle2, Clock, TrendingUp, Sparkles, Eye, Camera, Target, FileText
 } from "lucide-react";
 import PageHeader from "@/components/shared/PageHeader";
 import { HELP_TARGETS, MODULES } from "@/lib/helpTargetRegistry";

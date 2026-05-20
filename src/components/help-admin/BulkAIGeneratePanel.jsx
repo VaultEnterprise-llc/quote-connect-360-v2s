@@ -1,13 +1,13 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo } from "react";
 import { base44 } from "@/api/base44Client";
 import { useQueryClient } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
-import { Sparkles, Play, Pause, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { Sparkles, Pause, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 import { HELP_TARGETS, MODULES } from "@/lib/helpTargetRegistry";
 
 const MODULE_LABELS = {

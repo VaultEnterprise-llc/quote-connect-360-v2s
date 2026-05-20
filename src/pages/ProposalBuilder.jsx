@@ -3,12 +3,11 @@ import { base44 } from "@/api/base44Client";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import {
   FileText, Plus, LayoutGrid, List, Search, Filter, AlertTriangle,
-  ArrowUpDown, Download, X, CheckSquare, XCircle, Clock, AlertOctagon
+  ArrowUpDown, Download, X, CheckSquare, AlertOctagon
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Badge } from "@/components/ui/badge";
 import PageHeader from "@/components/shared/PageHeader";
 import EmptyState from "@/components/shared/EmptyState";
 import ProposalModal from "@/components/proposals/ProposalModal";

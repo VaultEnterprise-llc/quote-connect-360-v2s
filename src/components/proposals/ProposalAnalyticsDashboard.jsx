@@ -1,8 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
-import { TrendingUp, TrendingDown } from "lucide-react";
+import { LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 
 export default function ProposalAnalyticsDashboard({ proposals }) {
   const approvalRate = proposals.length > 0 ? Math.round((proposals.filter(p => p.status === "approved").length / proposals.filter(p => ["approved", "rejected", "viewed", "sent"].includes(p.status)).length) * 100) : 0;

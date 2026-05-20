@@ -13,7 +13,6 @@ import { listQuotes } from '@/lib/mga/services/quoteService';
 import MGATXQuoteTransmitModal from '@/components/mga/MGATXQuoteTransmitModal.jsx';
 import MGAReportExportModal from '@/components/mga/MGAReportExportModal.jsx';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { format } from 'date-fns';
 import { Briefcase, Users, FileText, Send, History, Download } from 'lucide-react';

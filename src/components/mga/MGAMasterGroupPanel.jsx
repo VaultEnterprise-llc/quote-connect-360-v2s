@@ -5,7 +5,6 @@
  */
 import React, { useState, useEffect } from 'react';
 import { listMasterGroups, reactivateBrokerAgency } from '@/lib/mga/services/masterGroupService';
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Building2, ChevronRight, Plus, Edit2, Power, PowerOff } from 'lucide-react';
 import MGACreateBrokerAgencyModal from '@/components/mga/MGACreateBrokerAgencyModal';

@@ -5,7 +5,6 @@
  */
 
 import React from 'react';
-import { Badge } from '@/components/ui/badge';
 import { Clock, AlertCircle, CheckCircle2 } from 'lucide-react';
 
 const statusConfig = {

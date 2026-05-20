@@ -11,16 +11,13 @@ import { format } from "date-fns";
 import { useAuth } from "@/lib/AuthContext";
 import StatusBadge from "@/components/shared/StatusBadge";
 import EmptyState from "@/components/shared/EmptyState";
-import CrossPageNavigation from "@/components/shared/CrossPageNavigation";
 import { useNavigate } from "react-router-dom";
 
 // Employer-specific components
 import ActionRequiredBanner from "@/components/employer/ActionRequiredBanner";
 import BrokerContactCard    from "@/components/employer/BrokerContactCard";
 import StatusTimeline       from "@/components/employer/StatusTimeline";
-import ProposalReviewPanel  from "@/components/employer/ProposalReviewPanel";
 import EnrollmentDrillDown  from "@/components/employer/EnrollmentDrillDown";
-import DocumentsPanel       from "@/components/employer/DocumentsPanel";
 import CaseLifecycleStatus  from "@/components/employer/CaseLifecycleStatus";
 import EnrollmentCountdown  from "@/components/employer/EnrollmentCountdown";
 import ProposalEnhanced     from "@/components/employer/ProposalEnhanced";

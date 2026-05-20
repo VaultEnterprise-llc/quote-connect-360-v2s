@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Copy, Play, Zap, Database, GitMerge, ChevronDown, ChevronRight } from "lucide-react";
+import { Copy, Play, Database, ChevronDown, ChevronRight } from "lucide-react";
 
 const EXAMPLE_QUERIES = [
   {

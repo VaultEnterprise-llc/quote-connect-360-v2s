@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Plus, Trash2 } from "lucide-react";
 
 const DEFAULT_PRESETS = [

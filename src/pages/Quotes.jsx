@@ -1,13 +1,11 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { base44 } from "@/api/base44Client";
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import {
-  FileText, Plus, Search, Filter, GitCompare, ChevronDown, ChevronUp,
-  AlertTriangle, SortAsc, X, XCircle, Download
+  FileText, Plus, GitCompare, ChevronDown, ChevronUp,
+  AlertTriangle, X, XCircle, Download
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import PageHeader from "@/components/shared/PageHeader";
 import EmptyState from "@/components/shared/EmptyState";

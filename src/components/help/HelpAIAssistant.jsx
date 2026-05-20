@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { base44 } from "@/api/base44Client";
 import { useAuth } from "@/lib/AuthContext";
 import { useLocation } from "react-router-dom";
-import { MessageSquare, X, Send, ThumbsUp, ThumbsDown, Sparkles, ChevronDown, BookOpen } from "lucide-react";
+import { X, Send, ThumbsUp, ThumbsDown, Sparkles, ChevronDown, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";

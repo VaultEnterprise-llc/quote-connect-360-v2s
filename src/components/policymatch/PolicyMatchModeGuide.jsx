@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { ChevronRight, Lightbulb } from "lucide-react";
 
 export default function PolicyMatchModeGuide() {

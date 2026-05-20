@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { base44 } from "@/api/base44Client";
-import { GitMerge, Play, Copy, Sparkles, Loader2, ChevronRight, Plus, Trash2, AlertCircle, CheckCircle2 } from "lucide-react";
+import { GitMerge, Play, Copy, Sparkles, Loader2, ChevronRight, Plus, Trash2, CheckCircle2 } from "lucide-react";
 
 const PRESET_TRANSFORMS = [
   {

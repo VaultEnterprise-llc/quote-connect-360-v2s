@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
-import { Shield, Plus, ExternalLink, CheckCircle2, AlertTriangle, Settings, Lock, Key, Users, Globe } from "lucide-react";
+import { Plus, Settings, Lock, Key, Users } from "lucide-react";
 
 const OAUTH_PROVIDERS = [
   { id: "okta", name: "Okta", logo: "🔵", status: "connected", users: 84, lastSync: "2 min ago", scopes: ["openid", "profile", "email", "groups"], protocol: "OIDC" },

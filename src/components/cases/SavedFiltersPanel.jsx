@@ -7,7 +7,6 @@ import {
 import {
   Popover, PopoverContent, PopoverTrigger
 } from "@/components/ui/popover";
-import { Badge } from "@/components/ui/badge";
 import { Save, Trash2, Bookmark } from "lucide-react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { base44 } from "@/api/base44Client";

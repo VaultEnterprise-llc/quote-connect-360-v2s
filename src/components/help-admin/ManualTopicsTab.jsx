@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
-import { Edit2, Eye, EyeOff, Trash2, Plus, Globe, Lock, BookOpen, Search, Filter } from "lucide-react";
+import { Edit2, Eye, EyeOff, Trash2, Plus, Globe, Lock, BookOpen, Search } from "lucide-react";
 
 const MODULE_LABELS = {
   DASHBOARD:"Dashboard", CASES:"Cases", CENSUS:"Census", QUOTES:"Quotes",

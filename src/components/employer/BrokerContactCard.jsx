@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MessageSquare, User } from "lucide-react";
+import { Mail, MessageSquare, User } from "lucide-react";
 
 /**
  * BrokerContactCard
