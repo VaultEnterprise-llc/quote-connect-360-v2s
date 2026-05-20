@@ -2,10 +2,9 @@
 /**
  * Gate 6H — Broker / Agency Lifecycle Management
  * Validation Test Suite — 23 Tests
- * @jest-environment node
- */
+  */
 
-/* eslint-env jest */
+/* global describe, test, expect, beforeEach */
 
 import { base44 } from '@/api/base44Client';
 

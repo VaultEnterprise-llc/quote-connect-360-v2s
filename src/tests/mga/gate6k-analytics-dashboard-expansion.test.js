@@ -6,7 +6,7 @@
  * 56 tests covering scope, permission, payload, and regression
  */
 
-import { describe, test, expect } from '@jest/globals';
+import { describe, test, expect } from 'vitest';
 
 describe('Gate 6K — Analytics Dashboard Expansion', () => {
   // Feature Flag Tests
